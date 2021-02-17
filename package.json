@@ -1,0 +1,8 @@
+{
+  "name": "codeLint-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:MagicHacker/codeLint-cli.git",
+  "author": "Johnson <zxmagichacker@gmail.com>",
+  "license": "MIT"
+}
