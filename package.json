@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "git@github.com:MagicHacker/codeLint-cli.git",
   "author": "Johnson <zxmagichacker@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^7.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.3.3",
+    "ora": "^5.3.0"
+  }
 }
