@@ -6,6 +6,7 @@
   "author": "Johnson <zxmagichacker@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "cfonts": "^2.9.1",
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
     "download-git-repo": "^3.0.2",
