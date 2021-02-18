@@ -1,2 +1,3 @@
 #!/usr/bin/env node
-console.log('hello cli');
+require('../src/cFonts')
+require('../src/command')
