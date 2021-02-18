@@ -8,6 +8,13 @@ program
   .version(version, '-v, --version', 'output the version number')
   // 定义用法
   .usage('<command> [options]')
+
+program
   // 定义初始化指令
-  .command('init', 'init the project')
-  .parse(process.argv)
+  .command('init')
+  .description('init relative repository')
+  .action(() => {
+    console.log('init')
+  })
+// 解析参数
+program.parse(process.argv)
