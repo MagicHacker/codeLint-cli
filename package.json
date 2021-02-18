@@ -1,16 +1,20 @@
 {
   "name": "codeLint-cli",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./bin/index.js",
   "repository": "git@github.com:MagicHacker/codeLint-cli.git",
   "author": "Johnson <zxmagichacker@gmail.com>",
   "license": "MIT",
+  "bin": {
+    "codeLint-cli": "./bin/index.js"
+  },
   "dependencies": {
     "cfonts": "^2.9.1",
     "chalk": "^4.1.0",
     "commander": "^7.1.0",
     "download-git-repo": "^3.0.2",
     "inquirer": "^7.3.3",
+    "metalsmith": "^2.3.0",
     "ora": "^5.3.0"
   }
 }
