@@ -3,6 +3,8 @@ require('../lib/cFonts')
 const { program } = require('commander')
 const { name, version } = require('../utils/constants')
 const chalk = require('chalk')
+const ora = require('ora')
+
 program
   // 定义当前版本
   .version(version, '-v, --version', 'output the version number')
@@ -18,9 +20,11 @@ program.on('--help', () => {
 program
   // 定义初始化指令
   .command('init')
+  .alias('i')
   .description('init relative repository')
   .action(() => {
-    console.log('init')
+    const spinner = ora('正在下载……').start()
+    spinner.fail()
   })
 // 解析参数
 program.parse(process.argv)
