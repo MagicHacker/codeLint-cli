@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-require('../src/cFonts')
+require('../lib/cFonts')
 const { program } = require('commander')
-const { name, version } = require('../src/utils/constants')
+const { name, version } = require('../utils/constants')
 const chalk = require('chalk')
 program
   // 定义当前版本
