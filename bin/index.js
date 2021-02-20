@@ -4,7 +4,8 @@ const { program } = require('commander')
 const { name, version } = require('../utils/constants')
 const chalk = require('chalk')
 const ora = require('ora')
-
+const { inQInit } = require('../lib/inquirer')
+const { downInit } = require('../lib/download')
 program
   // 定义当前版本
   .version(version, '-v, --version', 'output the version number')
@@ -22,9 +23,12 @@ program
   .command('init')
   .alias('i')
   .description('init relative repository')
-  .action(() => {
-    const spinner = ora('正在下载……').start()
-    spinner.fail()
+  .action(async () => {
+    // const spinner = ora('正在下载……').start()
+    const { linter, formatter } = await inQInit()
+    downInit()
+    console.log('xx', linter, formatter)
+    // spinner.fail()
   })
 // 解析参数
 program.parse(process.argv)
