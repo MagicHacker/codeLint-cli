@@ -10,7 +10,7 @@ program
   // 定义当前版本
   .version(version, '-v, --version', 'output the version number')
   // 定义用法
-  .usage('<command> [options]')
+  .usage('<command>')
 
 program.on('--help', () => {
   console.log()
