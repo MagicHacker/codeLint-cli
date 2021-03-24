@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-require('../lib/cFonts')
+const { cFontsInit } = require('../lib/cFonts')
 const { program } = require('commander')
 const { name, version } = require('../utils/constants')
 const chalk = require('chalk')
@@ -13,6 +13,7 @@ program
   .usage('<command>')
 
 program.on('--help', () => {
+  cFontsInit()
   console.log()
   console.log(`Run ${chalk.cyan('codeLint-cli <command> --help')} for detailed usage of given command.`)
   console.log()
