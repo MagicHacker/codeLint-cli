@@ -56,7 +56,7 @@ const formatterList = [
       }
     ],
     filter: function(val) {
-      return val.toLowerCase();
+      return val.map(item => item.toLowerCase())
     }
   }
 ]

@@ -20,9 +20,9 @@ program
   .description('init relative repository')
   .action(async () => {
     // const spinner = ora('正在下载……').start()
-    const { linter, formatter } = await inQInit()
-    downInit()
-    console.log('xx', linter, formatter)
+    const { techFrame, linter, formatter } = await inQInit()
+    // downInit()
+    console.log('xx', techFrame, linter, formatter)
     // spinner.fail()
   })
   // 监听help
