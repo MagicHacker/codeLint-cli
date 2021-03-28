@@ -4,15 +4,15 @@
 const config = {
   'alloy/vue': {
     name: 'eslint-plugin-vue',
-    url: 'github'
+    url: 'MagicHacker/codeLintTpl#alloy-vue'
   },
   'alloy/react': {
     name: 'eslint-plugin-react',
-    url: 'MagicHacker/codeLintTpl#master'
+    url: 'MagicHacker/codeLintTpl#alloy-react'
   },
   'prettier': {
     name: 'Prettier',
-    url: 'Prettier'
+    url: 'MagicHacker/codeLintTpl#prettier'
   }
 }
 
