@@ -1,27 +1,6 @@
 /**
  * inquirer的询问列表
- * 先选plugin
- * 再选Linter
- * 最后选择prettier
  */
-const techList = [
-  {
-    type: 'list',
-    message: 'Pick the eslint plugin you needed:',
-    name: 'key',
-    choices: [
-      {
-        name: 'eslint-plugin-vue'
-      },
-      {
-        name: 'eslint-plugin-react'
-      }
-    ],
-    filter: function(val) {
-      return val.toLowerCase();
-    }
-  }
-]
 const linterList = [
   {
     type: 'list',
@@ -29,13 +8,10 @@ const linterList = [
     name: 'key',
     choices: [
       {
-        name: 'Airbnb config'
+        name: 'alloy/vue'
       },
       {
-        name: 'Standard config'
-      },
-      {
-        name: 'Alloy config'
+        name: 'alloy/react'
       }
     ],
     filter: function(val) {
@@ -61,7 +37,6 @@ const formatterList = [
   }
 ]
 module.exports = {
-  techList,
   linterList,
   formatterList
 }
