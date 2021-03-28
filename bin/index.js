@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 const { cFontsInit } = require('../lib/cFonts')
 const { program } = require('commander')
-const { name, version } = require('../utils/constants')
+const { version } = require('../utils/constants')
 const chalk = require('chalk')
 const ora = require('ora')
 const { inQInit } = require('../lib/inquirer')
-const { downInit } = require('../lib/download')
-
+const { downloadRepo } = require('../lib/download')
+const { config } = require('../utils/config')
 program
   // 定义当前版本
   .version(version, '-v, --version', 'output the version number')
@@ -19,11 +19,13 @@ program
   .alias('i')
   .description('init relative repository')
   .action(async () => {
-    // const spinner = ora('正在下载……').start()
-    const { techFrame, linter, formatter } = await inQInit()
-    // downInit()
-    console.log('xx', techFrame, linter, formatter)
-    // spinner.fail()
+    try {
+      const { linter, formatter } = await inQInit()
+      // downloadRepo(config[linter.key].url, './test')
+      console.log(linter, formatter)
+    } catch (error) {
+      console.log('download ERR:', chalk.red(error))
+    }
   })
   // 监听help
   program.on('--help', () => {
