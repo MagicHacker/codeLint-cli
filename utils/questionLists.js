@@ -8,10 +8,10 @@ const linterList = [
     name: 'key',
     choices: [
       {
-        name: 'alloy/vue'
+        name: 'vue-prettier'
       },
       {
-        name: 'alloy/react'
+        name: 'react-prettier'
       }
     ],
     filter: function(val) {
@@ -20,23 +20,6 @@ const linterList = [
   }
 ]
 
-const formatterList = [
-  {
-    type: 'checkbox',
-    message: 'Check the formatter you needed',
-    name: 'key',
-    choices: [
-      {
-        name: 'Prettier',
-        checked: true
-      }
-    ],
-    filter: function(val) {
-      return val.map(item => item.toLowerCase())
-    }
-  }
-]
 module.exports = {
-  linterList,
-  formatterList
+  linterList
 }
