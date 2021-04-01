@@ -20,9 +20,8 @@ program
   .description('init relative repository')
   .action(async () => {
     try {
-      const { linter, formatter } = await inQInit()
-      // downloadRepo(config[linter.key].url, './test')
-      console.log(linter, formatter)
+      const { linter } = await inQInit()
+      await downloadRepo(config[linter.key].url, './test')
     } catch (error) {
       console.log('download ERR:', chalk.red(error))
     }
