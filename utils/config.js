@@ -2,17 +2,13 @@
  * 配置项
  */
 const config = {
-  'alloy/vue': {
+  'vue-prettier': {
     name: 'eslint-plugin-vue',
-    url: 'MagicHacker/codeLintTpl#alloy-vue'
+    url: 'MagicHacker/codeLintTpl#vue-prettier'
   },
-  'alloy/react': {
+  'react-prettier': {
     name: 'eslint-plugin-react',
-    url: 'MagicHacker/codeLintTpl#alloy-react'
-  },
-  'prettier': {
-    name: 'Prettier',
-    url: 'MagicHacker/codeLintTpl#prettier'
+    url: 'MagicHacker/codeLintTpl#react-prettier'
   }
 }
 
