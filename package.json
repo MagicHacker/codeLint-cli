@@ -1,12 +1,12 @@
 {
-  "name": "codelint",
+  "name": "codelintcli",
   "version": "0.0.1",
   "main": "./bin/index.js",
   "repository": "git@github.com:MagicHacker/codeLint-cli.git",
   "author": "Johnson <zxmagichacker@gmail.com>",
   "license": "MIT",
   "bin": {
-    "codelint": "./bin/index.js"
+    "codelintcli": "./bin/index.js"
   },
   "dependencies": {
     "cfonts": "^2.9.1",
