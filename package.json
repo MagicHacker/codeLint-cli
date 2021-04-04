@@ -1,6 +1,6 @@
 {
   "name": "codeLint-cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "./bin/index.js",
   "repository": "git@github.com:MagicHacker/codeLint-cli.git",
   "author": "Johnson <zxmagichacker@gmail.com>",
